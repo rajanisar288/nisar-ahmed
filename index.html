@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Your website description here">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Your, Keywords, Here">
+    <meta name="author" content="Your Name or Company">
+    <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/path/to/favicon.ico" type="image/x-icon">
+    
+    <meta property="og:title" content="Your Website Title">
+    <meta property="og:description" content="Your website description here">
+    <meta property="og:image" content="https://example.com/path/to/image.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Website Title">
+    <meta name="twitter:description" content="Your website description here">
+    <meta name="twitter:image" content="https://example.com/path/to/image.jpg">
+    <meta name="twitter:site" content="@yourtwitterhandle">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Canonical URL -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/global.css">
+    <!-- <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 600px)"> -->
+    <!-- <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 600px)"> -->
+
+    <link rel="canonical" href="https://example.com">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="profile">
+                <div class="image"><img src="./images/nisarr new.jpg" alt="profile image"></div>
+                <div class="detail">
+                    <h2>Nisar Ahmed</h2>
+                    <p class="mainPera"><i class='bx bx-time'></i> <span>09:00 am to 08:00 pm (GMT)</span></p>
+                    <p><i class='bx bxl-github linkIcon'></i><a href="https://github.com/rajanisar288" target="_blank">Follow me on GitHub</a></p>
+                    <p><i class='bx bx-envelope'></i> <span>dev.m.nisar191@gmail.com</span></p>
+                </div>
+            </div>
+            <div class="links">
+                <ul>
+                    <li class="link active" onclick="activeItem('home')" id="home">_Home</li>
+                    <li class="link" onclick="activeItem('about')" id="about">_About Me</li>
+                    <li class="link" onclick="activeItem('skill')" id="skill">_Skill</li>
+                    <li class="link" onclick="activeItem('project')" id="project">_Project</li>
+                    <li class="link" onclick="activeItem('contact')" id="contact">_Contact</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div id="home" class="tab">
+                <div class="tabContent">
+                    <div class="tabHeading"><h2>/<i class='bx bx-home'></i></h2></div>
+                    <div class="tabDetail">
+                        <div class="intro">
+                            <p>I'm Nisar Ahmed, a 24-year-old sr.web developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="about" class=" tab tabHide">
+                <div class="tabHeading"><h2>/<i class='bx bxs-user-detail'></i></h2></div>
+            </div>
+            <div id="skill" class=" tab tabHide">
+                <div class="tabHeading"><h2>/<i class='bx bx-expand-horizontal'></i></h2></div>
+            </div>
+            <div id="project" class=" tab tabHide">
+                <div class="tabHeading"><h2>/<i class='bx bx-code-curly'></i></h2></div>
+            </div>
+            <div id="contact" class=" tab tabHide">
+                <div class="tabHeading"><h2>/<i class='bx bx-phone'></i></h2></div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; Nisar. 2021 - 2024, Design inspired by <a href="https://en.ayaka.shn.hk/" style="text-decoration: underline;">Ayaka</a></p>
+        </div>
+    </div>
+
+
+<script src="js/animation.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+:root{
+    --primary:#181818;
+    --secondary:#1F2223;
+    --mainColor:#B7B1A7;
+
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #181818;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+}
+/* navbar  */
+.container .nav{
+    width: 300px;
+    background: var(--secondary);
+    height: calc(100vh - 50px);
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.nav .profile{
+    width: 100%;
+    padding: 15px 0px;
+}
+.nav .profile .image{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.nav .profile .image img{
+    width: 150px;
+    border-radius: 50%;
+}
+.nav .profile .detail {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+}
+h1,h2,p,i,a,li{
+    color: var(--mainColor);
+    text-decoration: none;
+    list-style: none;
+}
+.nav .profile .detail p.mainPera{
+    margin-top: 15px;
+}
+.nav .profile .detail p{
+    font-size: 15px;
+}
+.nav .profile .detail p i{
+    margin-right: 5px;
+    font-size: 19px;
+}
+.nav .profile .detail p i.linkIcon{
+    margin-right: 8px;
+}
+
+.nav .links{
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #464646;
+    margin-top: 5px;
+}
+.nav .links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 15px;
+}
+.nav .links ul li{
+    transition: 320ms;
+    position: relative;
+    cursor: pointer;
+}
+.nav .links ul li:hover{
+    margin-left: 5px;
+    transition: 320ms;
+    letter-spacing: 3px;
+}
+.nav .links ul li.active{
+    letter-spacing: 3px;
+    margin-left: 5px;
+}
+.nav .links ul li.active::after{
+    content: '';
+    position: absolute;
+    background: red;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    left: -5px;
+    top: 9px;
+}
+
+/* content  */
+.container .content{
+    width: calc(100% - 300px);
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    color: var(--mainColor);
+    box-sizing: border-box;
+}
+.content .tabHide{
+   display: none;
+}
+.content .tab{
+    width: 100%;
+    padding: 0 35px;
+}
+.tab .tabContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tab .tabContent .tabHeading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+.tab .tabContent .tabHeading h2 i{
+    margin-left: 10px;
+}
+/* FOOTER  */
+.container .footer{
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    /* background: orange; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: var(--mainColor);
+}
