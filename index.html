@@ -39,11 +39,14 @@
     <!-- <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 600px)"> -->
 
     <link rel="canonical" href="https://example.com">
-    <title>Document</title>
+    <title>Nisar Ahmed</title>
 </head>
 <body>
     <div class="container">
-        <div class="nav">
+        <div class="toggle">
+            <button onclick="menuToggle()"><i class='bx bx-menu'></i></button>
+        </div>
+        <div class="nav" id="navbar">
             <div class="profile">
                 <div class="image"><img src="./images/nisarr new.jpg" alt="profile image"></div>
                 <div class="detail">
@@ -64,32 +67,237 @@
                 </ul>
             </div>
         </div>
-        <div class="content">
-            <div id="home" class="tab">
+        <div class="content" id="content">
+            <div id="home" class="tab ">
                 <div class="tabContent">
                     <div class="tabHeading"><h2>/<i class='bx bx-home'></i></h2></div>
                     <div class="tabDetail">
                         <div class="intro">
-                            <p>I'm Nisar Ahmed, a 24-year-old sr.web developer</p>
+                            <p class="mt-15">For see my projects how I can make things easier with my experience, please visit my <a href="https://github.com/rajanisar288" >GitHub</a></p>
+                            <p class="mt-15">I'm Nisar Ahmed, a 24-year-old sr.web developer</p>
+                            <p class="mt-15">Full-stack Software [MEAN] Developer and JavaScript Enthusiast, Who Loves Building Things In JavaScript.</p>
+                            <p class="mt-7"><li><a href="facebook"><i class='bx bxl-facebook'></i> Facebook</a></li></p>
+                            <p class="mt-7"><li><a href="facebook"><i class='bx bxl-instagram'></i> Instagram</a></li></p>
+                            <p class="mt-7"><li><a href="facebook"><i class='bx bxl-linkedin-square'></i> LinkedIn</a></li></p>
+                            <p class="mt-7"><li><a href="facebook"><i class='bx bxl-twitter'></i> Twitter</a></li></p>
+                            <p class="mt-7"><li><a href="facebook"><i class='bx bxl-youtube'></i> Youtube</a></li></p>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="about" class=" tab tabHide">
-                <div class="tabHeading"><h2>/<i class='bx bxs-user-detail'></i></h2></div>
+                <div class="tabContent">
+                    <div class="tabHeading"><h2>/<i class='bx bxs-user-detail'></i></h2></div>
+                    <div class="tabDetail">
+                        <div class="intro">
+                            <p class="mt-15">Passionate Front-End & Angular Developer | Crafting Engaging Web Experiences | 2+ Years of Expertise at<a href="https://github.com/rajanisar288" >Tksel Inc</a></p>
+                            <p class="mt-15">Experienced Angular Developer with 2+ years of professional expertise in designing and developing
+                                dynamic web applications. Skilled in utilizing the Angular framework to create efficient and user-friendly
+                                interfaces. Proficient in working with HTML, CSS, SASS and JavaScript to build robust front-end solutions. Adept at
+                                collaborating with cross-functional teams to deliver high-quality software products within deadlines.</p>
+                                <p class="mt-7"><h4>Skills</h4></p>
+                            <p class="mt-7"> 
+                                Angular: Demonstrated ability to develop scalable web applications using Angular, including components, services and
+                                module.
+                                HTML/CSS/JavaScript: proficient in building responsive and visually appealing user interfaces with clean and
+                                semantic code.
+                                UI/UX Design: Strong understanding of user-centered design principles and experience in creating intuitive and
+                                engaging interfaces.
+                                Restful APIs: Experience in integrating front-end applications with back-end services through Restful APIs.
+                                Version Control: Proficient in utilizing Git for version control and collaborating with teams through platforms like
+                                GitHub.
+                                Problem Solving: Strong analytical and problem-solving skills, with the ability to identify and resolve complex
+                                technical issues efficiently.
+                                Agile Methodology: Experience working in an Agile development environment, ensuring timely delivery and effective
+                                collaboration.</p>
+                                <p class="mt-15"><h4>Experience</h4></p>
+                                <p><h5>Front-End Developer -Angular </h5></p>
+                                <p><a href="">Tksel</a> - Full time</p>
+                                <p>Oct 2022 - Present · 1 yr 10 mos</p>
+                                <p>Karāchi, Sindh, Pakistan</p>
+                                <br>
+                                <p>
+                                    Project management:<br><br>
+
+                                    The Angular Project Management Tool is a robust web application designed to streamline and enhance the project management process.<br>
+                                    Built using the Angular framework, this tool provides a user-friendly interface and powerful features to help project managers and teams effectively plan,<br>
+                                    track, and collaborate on their projects.
+                                </p>
+                                <p class="mt-7 line"></p>
+                                <p><h5>Front-End Developer </h5></p>
+                                <p><a href="">Poulta</a> - Full time</p>
+                                <p>Aug 2021 - Sep 2022 · 1 yr 2 mos</p>
+                                <p>Karāchi, Sindh, Pakistan</p>
+                                <br>
+                                <p>
+                                    Next-gen realtime data driven tool:<br><br>
+                                
+                                    End-to-end data driven poultry farming
+                                    They help farmers with early detection,<br> prediction, and prevention of losses across their poultry farm value-chain.<br>
+                                    With real-time integrated data and actionable insights, always make the better decision.
+                                </p>
+                                <p class="mt-7 line"></p>
+                                <p><h5>Front-End  </h5></p>
+                                <p><a href="">Poulta</a> - -Internship</p>
+                                <p>Jun 2021 - Aug 2021 · 3 mos</p>
+                                <p>Karāchi, Sindh, Pakistan</p>
+                                <br>
+                                <p>
+                                    Creating user interfaces:<br>
+                                    PSD To HTML ,CSS
+
+                                </p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="skill" class=" tab tabHide">
-                <div class="tabHeading"><h2>/<i class='bx bx-expand-horizontal'></i></h2></div>
+                <div class="tabContent">
+                    <div class="tabHeading"><h2>/<i class='bx bx-expand-horizontal'></i></h2></div>
+                    <div class="tabDetail">
+                        <div class="intro">
+                            <p class="mt-15"><h4>Expertise: </h4></p>
+                            <p class="mt-7"><li><i class='bx bxl-html5'></i>HTML5</li></p>
+                            <p class="mt-7"><li><i class='bx bxl-css3'></i>CSS3</li></p>
+                            <p class="mt-7"><li><i class='bx bxl-javascript'></i>JAVASCRIPT</li></p>
+                            <p class="mt-7"><li><i class='bx bxl-typescript'></i>TYPESCRIPT</li></p>
+                            <p class="mt-7"><li><i class='bx bxl-bootstrap'></i>BOOTSTRAP 4/5</li></p>
+                            <p class="mt-7"><li>- NGX BOOTSTRAP</li></p>
+                            <p class="mt-7"><li><i class='bx bxl-html5'></i>TAIGA UI</li></p>
+                            <p class="mt-7"><li><i class='bx bxl-angular'></i>ANGULAR</li></p>
+                            <p class="mt-7"><li>- ANGULAR MATERIAL</li></p>
+                            <p class="mt-7"><li><i class='bx bxl-tailwind-css'></i>TAILWIND</li></p>
+                            <p class="mt-7"><li>- EXPRESS JS</li></p>
+                            <p class="mt-7"><li><i class='bx bxl-mongodb'></i>MONGODB</li></p>
+                            <p class="mt-7"><li><i class='bx bxl-nodejs'></i>NODE JS</li></p>
+                            <p class="line mt-7"></p>
+                            <p class="mt-15"><h4>Environment Tools:</h4></p>
+                            <p class="mt-7"><li><i class='bx bxl-visual-studio'></i>VS Code Studio "For writing code"</li></p>
+                            <p class="mt-7"><li>- WebStorm (JetsBrain) "For writing code with ultimate features"</li></p>
+                            <p class="mt-7"><li>- Sublime Text Editor "I'm using this for learning something"</li></p>
+                            <p class="mt-7"><li>- Postman ""APIs testing and also I'm using RapidClient as VS Code extension</li></p>
+                            <p class="mt-7"><li><i class='bx bxl-chrome'></i>Chrome</li></p>
+                            <p class="mt-7"><li><i class='bx bxl-github'></i>GitHub</li></p>
+                            <p class="mt-7"><li><i class='bx bxl-gitlab'></i>GitLab</li></p>
+                            <p class="mt-7"><li>- Color Cop "its help me to copy any color code from anywhere"</li></p>
+                            <p class="mt-7"><li>- Putty "some time when i need remote access i used putty"</li></p>
+                            <p class="mt-7"><li>- MongoDb Compass "ahh! love this MongoDb compass its GUI based software to managing Data</li></p>
+                            <p class="mt-7"><li>- Notion "my partner who reminds me to every day for what to do </li></p>
+                            <p class="line mt-7"></p>
+                            <p class="mt-15"><h4>Other:</h4></p>
+                            <p class="mt-7"><li><i class='bx bxl-figma'></i>Figma "Learning for self  ideas "</li></p>
+                            <p class="mt-7"><li><i class='bx bxl-aws'></i>AWS "some time i used AWS EC2 service for deploying client projects</li></p>
+                            <p class="mt-7"><li>- Nginx "I always with Nginx and its my last one chapter to Agile process </li></p>
+                            <!-- <p class="line mt-7"></p> -->
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="project" class=" tab tabHide">
-                <div class="tabHeading"><h2>/<i class='bx bx-code-curly'></i></h2></div>
+                <div class="tabContent">
+                    <div class="tabHeading"><h2>/<i class='bx bx-code-curly'></i></h2></div>
+                    <p><a href="#html">Html</a>/<a href="#angular">Angular</a></p>
+                    <div class="tabDetail">
+                        <div class="intro">
+                            <p class="mt-15" id="html"><h3>Projects : </h3></p>
+                            <p class="mt-7"><h4>HTML5 , CSS3 & JS :</h4></p>
+                            <p class="mt-7"><h4>1. Portfolio with glass morphism:</h4></p>
+                            <p class="mt-3"><b>Description :</b></p>
+                            <p>Designing a portfolio UI with glass morphism involves using translucent elements, blur effects, and subtle shadows to create a sense of depth and transparency.<br> 
+                                This style often uses frosted glass-like panels to separate content while maintaining a clean and minimalist appearance.</p>
+                                <p class="mt-3"><a href="https://github.com/rajanisar288/my-app" target="_blank"><i class='bx bx-show'  style="margin-right: 8px;"></i>Live Preview</a></p>
+                            <p class="mt-3"><a href="https://github.com/rajanisar288/my-app" target="_blank"><i class='bx bx-code-alt' style="margin-right: 8px;"></i>Get Source Code</a></p>
+
+                            <p class="mt-40"><h4>2. Iphone 14 UI:</h4></p>
+                            <p class="mt-3"><b>Description :</b></p>
+                            <p>Creating a UI clone of the home screen of iPhone 14 Pro with live weather and time updating functionality using HTML, CSS, and JavaScript involves<br>
+                                 replicating Apple's modern design while integrating dynamic weather and time information.</p>
+                                <p class="mt-3"><a href="https://rajanisar288.github.io/iphone-14/" target="_blank"><i class='bx bx-show'  style="margin-right: 8px;"></i>Live Preview</a></p>
+                            <p class="mt-3"><a href="https://github.com/rajanisar288/iphone-14" target="_blank"><i class='bx bx-code-alt' style="margin-right: 8px;"></i>Get Source Code</a></p>
+
+                            <p class="mt-40"><h4>3. WatchHub:</h4></p>
+                            <p class="mt-3"><b>Description :</b></p>
+                            <p>Creating the "watchHub" landing page UI with HTML, CSS, JavaScript, and GSAP involves crafting a visually captivating and interactive experience centered around watches.<br></p>
+                                <p class="mt-3"><a href="https://rajanisar288.github.io/WatchesHub/" target="_blank"><i class='bx bx-show'  style="margin-right: 8px;"></i>Live Preview</a></p>
+                            <p class="mt-3"><a href="https://github.com/rajanisar288/WatchesHub" target="_blank"><i class='bx bx-code-alt' style="margin-right: 8px;"></i>Get Source Code</a></p>
+
+
+                            <p class="mt-40"><h4>4. Background changer:</h4></p>
+                            <p class="mt-3"><b>Description :</b></p>
+                            <p>Dive into a captivating digital experience with a landing page that seamlessly blends aesthetics and functionality. This project showcases an innovative approach using HTML for structure, CSS for styling finesse,<br>
+                                 and JavaScript for dynamic interactions, featuring a background image changer and a gallery slider that stores and displays captivating visuals.</p>
+                                <p class="mt-3"><a href="https://rajanisar288.github.io/landing-page-ui/" target="_blank"><i class='bx bx-show'  style="margin-right: 8px;"></i>Live Preview</a></p>
+                            <p class="mt-3"><a href="https://github.com/rajanisar288/landing-page-ui" target="_blank"><i class='bx bx-code-alt' style="margin-right: 8px;"></i>Get Source Code</a></p>
+
+                            <p class="mt-40"><h4>5. Golden Mines Coal Karachi: </h4>(For Client)</p>
+                            <p class="mt-3"><b>Description :</b></p>
+                            <p>Enter a digital realm crafted exclusively for client interaction and engagement. This website exemplifies the synergy of HTML for structure, CSS for visual finesse, and JavaScript for dynamic functionality,<br>
+                                 featuring a versatile slider and seamless email sending capability directly from the client's browser</p>
+                                <p class="mt-3"><a href="https://rajanisar288.github.io/golden-mines-coal-karachi.github.io/" target="_blank"><i class='bx bx-show'  style="margin-right: 8px;"></i>Live Preview</a></p>
+                            <p class="mt-3"><a href="https://github.com/rajanisar288/golden-mines-coal-karachi.github.io" target="_blank"><i class='bx bx-code-alt' style="margin-right: 8px;"></i>Get Source Code</a></p>
+
+                            <p class="mt-40"><h4>6. DarkTheme & Sticky Navbar:</h4></p>
+                            <p class="mt-3"><b>Description :</b></p>
+                            <p>By integrating HTML, CSS, and JavaScript, this landing page with an image changer background and slider gallery not only captivates users with stunning visuals but also demonstrates technical prowess in web development,<br>
+                                 offering a dynamic and immersive digital experience.</p>
+                                <p class="mt-3"><a href="https://rajanisar288.github.io/programmer-ui/#home" target="_blank"><i class='bx bx-show'  style="margin-right: 8px;"></i>Live Preview</a></p>
+                            <p class="mt-3"><a href="https://github.com/rajanisar288/programmer-ui" target="_blank"><i class='bx bx-code-alt' style="margin-right: 8px;"></i>Get Source Code</a></p>
+
+                            <p class="mt-40"><h4>7. Responsive Portfolio:</h4></p>
+                            <p class="mt-3"><b>Description :</b></p>
+                            <p>Creating a website for a client with a slider and the capability to send emails from the client side,<br>
+                                 without relying on backend technologies, showcases a blend of frontend skills and interactivity. </p>
+                                <p class="mt-3"><a href="https://rajanisar288.github.io/personal/index.html" target="_blank"><i class='bx bx-show'  style="margin-right: 8px;"></i>Live Preview</a></p>
+                            <p class="mt-3"><a href="https://github.com/rajanisar288/personal" target="_blank"><i class='bx bx-code-alt' style="margin-right: 8px;"></i>Get Source Code</a></p>
+
+                                <p class="line mt-15"></p>
+
+                                <p class="mt-7" id="angular"><h4>ANGULAR :</h4></p>
+                                <p class="mt-40"><h4>1. Office.io:</h4></p>
+                                <p class="mt-3"><b>Description :</b></p>
+                                <p>Embark on a journey through a meticulously crafted, scalable application designed to streamline organizational operations. This Angular tool, built with pure TypeScript functionality, offers a seamless experience for admins, managers,<br>
+                                     and employees, enabling efficient communication, task management, and collaboration.</p>
+                                     <p class="mt-15"><b>1. Key Features :</b></p>
+                                     <p class="mt-3"><li><b>Role-Based Access :</b></li></p>
+                                     <p class="ml-5"><li class="list-dot">Admin (CEO): Has the ability to create and manage user roles, including managers and employees, and oversee all tasks and deadlines.</li></p>
+                                     <p class="ml-5"><li class="list-dot">Manager: Can create and manage employees, assign tasks, and receive notifications on task completion or deadlines.</li></p>
+                                     <p class="ml-5"><li class="list-dot">Employee: Can participate in meetings, chat, calls, screen sharing, and manage assigned tasks</li></p>
+                                     <p class="mt-15"><b>2. Communication Tools :</b></p>
+                                     <p class="ml-5"><li class="list-dot">Meetings: Schedule and conduct meetings with integrated video call and screen-sharing capabilities.</li></p>
+                                     <p class="ml-5"><li class="list-dot">Chat: Real-time messaging between team members for quick and efficient communication.</li></p>
+                                     <p class="ml-5"><li class="list-dot">Calls: Voice call functionality for direct communication within the team.</li></p>
+                                     <p class="mt-15"><b>3. Task Management :</b></p>
+                                     <p class="ml-5"><li class="list-dot">Task Assignment: Managers can assign tasks to employees with specified deadlines.</li></p>
+                                     <p class="ml-5"><li class="list-dot">Notifications: Automatic notifications to managers if tasks are completed or missed by the deadline.</li></p>
+                                     <p class="ml-5"><li class="list-dot">Admin Oversight: The admin has visibility into all tasks and deadlines, ensuring a comprehensive overview of the team’s performance.</li></p>
+                                     <p class="mt-15"><b>4. Theming and Responsiveness :</b></p>
+                                     <p class="ml-5"><li class="list-dot">Dark and Light Themes: Users can toggle between dark and light modes based on their preference.</li></p>
+                                     <p class="ml-5"><li class="list-dot">Responsive Design: Ensures optimal user experience across various devices and screen sizes.</li></p>
+                                     <p class="mt-15"><b>5. Public View and User Panels:</b></p>
+                                     <p class="ml-5"><li class="list-dot">Public View Page: Accessible information for visitors and prospective clients.</li></p>
+                                     <p class="ml-5"><li class="list-dot">User Panels: Dedicated panels for admin, managers, and employees, tailored to their specific needs and functionalities.</li></p>
+                                     <p class="mt-15"><b>6. Scalable Backend:</b></p>
+                                     <p class="ml-5"><li class="list-dot">Node.js and Express.js: Used for building a robust and scalable backend</li></p>
+                                     <p class="ml-5"><li class="list-dot">MongoDB: Utilized for database management with sharding for scalability.</li></p>
+                                     <p class="ml-5"><li class="list-dot">Microservice Architecture: Ensures modular and independent services for different functionalities.</li></p>
+                                     <p class="ml-5"><li class="list-dot">Kafka and Redis: Implemented for horizontal and vertical scaling, providing efficient message brokering and caching.</li></p>
+                                     <p class="mt-15"><b>7. Frontend Architecture:</b></p>
+                                     <p class="ml-5"><li class="list-dot">Shared Components, Directives, and Pipes: Modularized frontend development for reusable and maintainable code</li></p>
+                                     <p class="ml-5"><li class="list-dot">Services: Centralized service management for handling business logic and API interactions.</li></p>
+                                     <p class="mt-15"><i>By integrating Angular, TypeScript, Node.js, Express.js, and MongoDB, along with advanced technologies like Kafka and Redis,<br>
+                                         this tool not only enhances organizational efficiency but also ensures scalability and robust performance.<br>
+                                         This project exemplifies a sophisticated approach to modern web development, delivering a comprehensive solution for enterprise management and collaboration.</i></p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="contact" class=" tab tabHide">
                 <div class="tabHeading"><h2>/<i class='bx bx-phone'></i></h2></div>
             </div>
         </div>
         <div class="footer">
-            <p>&copy; Nisar. 2021 - 2024, Design inspired by <a href="https://en.ayaka.shn.hk/" style="text-decoration: underline;">Ayaka</a></p>
+            <p>&copy; Nisar. 2021 - 2024, Design inspired by <a href="https://en.ayaka.shn.hk/" >Ayaka</a></p>
         </div>
     </div>
 

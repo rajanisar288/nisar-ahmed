@@ -17,7 +17,26 @@ body{
 
 .container{
     width: 100%;
+    position: relative;
     display: flex;
+}
+.container .toggle{
+    position: fixed;
+    z-index: 888;
+    left: 3px;
+    top: 3px;
+
+}
+.container .toggle button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    background: var(--primary);
+    color: var(--mainColor);
+    line-height: 40px;
+    /* background: transparent; */
 }
 /* navbar  */
 .container .nav{
@@ -26,6 +45,12 @@ body{
     height: calc(100vh - 50px);
     padding: 0 15px;
     box-sizing: border-box;
+    transition: 320ms;
+}
+.hideNav{
+    margin-left: -300px;
+    transition: 320ms;
+
 }
 .nav .profile{
     width: 100%;
@@ -111,13 +136,17 @@ h1,h2,p,i,a,li{
     overflow-y: auto;
     color: var(--mainColor);
     box-sizing: border-box;
+    padding-bottom: 50px;
+}
+.showContent{
+    width: 100% !important;
 }
 .content .tabHide{
    display: none;
 }
 .content .tab{
     width: 100%;
-    padding: 0 35px;
+    padding: 0 50px;
 }
 .tab .tabContent{
     width: 100%;
@@ -133,6 +162,10 @@ h1,h2,p,i,a,li{
 .tab .tabContent .tabHeading h2 i{
     margin-left: 10px;
 }
+.tab .tabContent .tabDetail .intro li{
+    list-style:decimal;
+    }
+
 /* FOOTER  */
 .container .footer{
     position: fixed;
@@ -145,3 +178,4 @@ h1,h2,p,i,a,li{
     display: flex;
     color: var(--mainColor);
 }
+

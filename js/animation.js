@@ -11,3 +11,24 @@ function activeItem(item){
     console.log(el);
     console.log(link);
 }
+
+
+
+//togle
+var isHide = false
+function menuToggle(){
+    let navbar = document.getElementById('navbar');
+    let content  =  document.getElementById('content')
+    if(isHide ===  false){
+        navbar.classList.add('hideNav')
+        content.classList.add('showContent')
+        isHide = !isHide
+    }else{
+        isHide = false
+        navbar.classList.remove('hideNav')
+        content.classList.remove('showContent')
+    }
+    console.log(isHide);
+        
+
+}

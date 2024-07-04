@@ -1,3 +1,6 @@
+*{
+    scroll-behavior: smooth;
+}
 button{
     cursor: pointer;
 }
@@ -6,4 +9,68 @@ button:focus{
 }
 a{
     text-decoration: none;
+    position: relative;
 }
+.mt-40{
+    margin-top: 40px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mt-7{
+    margin-top: 7px;
+}
+.mt-5{
+    margin-top: 5px;
+}
+.mt-3{
+    margin-top: 3px;
+}
+.ml-5{
+    margin-left: 5px;
+}
+.list-dot{
+    list-style: none !important;
+}
+.line{
+    border-bottom: 1px solid #383838;
+    margin-bottom: 7px;
+}
+a::before{
+        position: absolute;
+        content: '';
+        width: 0%;
+        height: 1px;
+        background-color: #B7B1A7;
+        bottom: -3px;
+        left: 50%;
+        transition: 320ms;
+}
+a:hover::before{
+    width: 100%;
+    left: 0 !important;
+    transition: 320ms;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 2px grey;  */
+    border-radius: 10px;
+    background: black;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #1F2223;
+    border-radius: 3px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B7B1A7; 
+    
+  }
